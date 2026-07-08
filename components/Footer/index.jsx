@@ -40,7 +40,11 @@ const Footer = () => {
           <Box sx={footerStyles.firstColumn}>
             <Box sx={footerStyles.navLogo}>
               <img src={logo} alt="Tindog logo" style={footerStyles.img} />
-              <Typography sx={footerStyles.pageTitle} fontWeight={700}>
+              <Typography
+                component="h2"
+                sx={footerStyles.pageTitle}
+                fontWeight={700}
+              >
                 Tindog
               </Typography>
             </Box>
@@ -51,24 +55,25 @@ const Footer = () => {
               part of this change
             </Typography>
 
-            <Box sx={footerStyles.contacts}>
+            <Box component="ul" sx={footerStyles.contacts}>
               {(contacts || []).map((item) => {
                 const { id, src, alt } = item;
 
                 return (
-                  <img
-                    key={id}
-                    src={src}
-                    alt={alt}
-                    style={footerStyles.contactImages}
-                  />
+                  <Box component="li" key={id}>
+                    <img
+                      src={src}
+                      alt={alt}
+                      style={footerStyles.contactImages}
+                    />
+                  </Box>
                 );
               })}
             </Box>
           </Box>
 
-          <Box sx={footerStyles.secondColumn}>
-            <Typography sx={footerStyles.secondColmunTextTitle}>
+          <Box component="nav" sx={footerStyles.secondColumn}>
+            <Typography component="h3" sx={footerStyles.secondColmunTextTitle}>
               Quick Links
             </Typography>
             <Typography sx={footerStyles.secondColumnText}>Guides</Typography>
