@@ -54,14 +54,17 @@ const Testimonials = () => {
   return (
     <Box id="features" sx={testimonialStyles.section}>
       <Box sx={testimonialStyles.margins}>
-        <Typography sx={testimonialStyles.firstP}>
-          Superb testimonials
-        </Typography>
-        <Typography sx={testimonialStyles.secondP}>
-          See what they say about us
-        </Typography>
+        <Box component="header">
+          <Typography component="p" sx={testimonialStyles.firstP}>
+            Superb testimonials
+          </Typography>
 
-        <Box sx={testimonialStyles.carouselBox}>
+          <Typography component="h2" sx={testimonialStyles.secondP}>
+            See what they say about us
+          </Typography>
+        </Box>
+
+        <Box component="ul" sx={testimonialStyles.carouselBox}>
           {(testimonialData || []).map((item) => {
             const {
               id,
@@ -75,7 +78,7 @@ const Testimonials = () => {
             } = item;
 
             return (
-              <Box key={id} sx={testimonialStyles.carousel}>
+              <Box component="li" key={id} sx={testimonialStyles.carousel}>
                 <Typography sx={testimonialStyles.carouselOwnerText}>
                   {ownerName}
                 </Typography>
