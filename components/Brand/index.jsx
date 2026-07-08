@@ -31,11 +31,17 @@ const images = [
 ];
 
 const Brand = () => {
+  const handleScrollInto = () => {
+    document.getElementById("features")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <Box component="section" sx={brandStyles.brandSection}>
-      <Typography sx={brandStyles.findOutText}>Find out more</Typography>
+      <IconButton onClick={handleScrollInto} sx={brandStyles.findOutArrowBox}>
+        <Typography sx={brandStyles.findOutText}>Find out more</Typography>
 
-      <IconButton href="#features" sx={brandStyles.findOutArrowBox}>
         <KeyboardArrowDownIcon sx={brandStyles.findOutArrow} />
       </IconButton>
 

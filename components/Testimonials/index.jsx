@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { IoStarSharp } from "react-icons/io5";
+import { ImQuotesLeft } from "react-icons/im";
 
 import testimonialStyles from "./testimonialStyles";
 import petDog from "../../src/assets/images/pet-dog.png";
@@ -39,17 +40,6 @@ const testimonialData = [
     description:
       "I really like Tindog for my pet Huskier. Tindog really gave me an accurate and safe results. Will recommend this one!",
   },
-  //   {
-  //     id: 4,
-  //     dogSrc: petDog,
-  //     ownerSrc: human,
-  //     petBreed: "Husky",
-  //     ownerName: "Jane Doe",
-  //     dogAlt: "Pet Dog Image",
-  //     ownerAlt: "Owner Image",
-  //     description:
-  //       "I really like Tindog for my pet Huskier. Tindog really gave me an accurate and safe results. Will recommend this one!",
-  //   },
 ];
 
 const stars = [
@@ -62,7 +52,7 @@ const stars = [
 
 const Testimonials = () => {
   return (
-    <Box sx={testimonialStyles.section}>
+    <Box id="features" sx={testimonialStyles.section}>
       <Box sx={testimonialStyles.margins}>
         <Typography sx={testimonialStyles.firstP}>
           Superb testimonials
@@ -92,15 +82,42 @@ const Testimonials = () => {
                 <Typography sx={testimonialStyles.carouselPetText}>
                   Pet: {petBreed}
                 </Typography>
+
                 <Box sx={testimonialStyles.starIcon}>
                   {(stars || []).map((item) => item)}
                 </Box>
-                <Typography sx={testimonialStyles.carouselDesc}>
-                  {description}
-                </Typography>
+
+                <Box sx={{ width: "288px" }}>
+                  <Typography sx={testimonialStyles.carouselDesc}>
+                    {description}
+                  </Typography>
+                </Box>
+
+                <Box sx={testimonialStyles.quotesBox}>
+                  <ImQuotesLeft />
+                </Box>
+
+                <Box sx={testimonialStyles.imageWrapper}>
+                  <img
+                    src={ownerSrc}
+                    alt={ownerAlt}
+                    style={testimonialStyles.ownerImg}
+                  />
+                  <img
+                    src={dogSrc}
+                    alt={dogAlt}
+                    style={testimonialStyles.petImg}
+                  />
+                </Box>
               </Box>
             );
           })}
+        </Box>
+
+        <Box sx={testimonialStyles.toggleBox}>
+          <Box sx={testimonialStyles.toggle} />
+          <Box sx={testimonialStyles.toggleGray} />
+          <Box sx={testimonialStyles.toggleGray} />
         </Box>
       </Box>
     </Box>

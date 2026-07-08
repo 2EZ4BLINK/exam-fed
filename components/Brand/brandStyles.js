@@ -21,7 +21,10 @@ const brandStyles = {
     fontFamily: '"Nanum Pen Script", cursive',
   },
   findOutArrowBox: {
+    display: "flex",
+    flexDirection: "column",
     color: "black",
+    mb: 5,
     "&:hover": {
       backgroundColor: "transparent",
     },
