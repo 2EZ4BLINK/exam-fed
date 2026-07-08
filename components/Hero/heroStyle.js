@@ -19,10 +19,12 @@ const heroStyles = {
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
   },
-  rightSection: {},
   leftSection: {
     width: "100%",
     maxWidth: "503px",
+  },
+  rightSection: {
+    position: "relative",
   },
   firstP: {
     ...defaultTextStyle(),
@@ -40,6 +42,30 @@ const heroStyles = {
   fourthP: {
     mt: "15px",
     ...defaultTextStyle("", "40px", "73.25px"),
+  },
+  fifthP: {
+    ...defaultTextStyle(),
+    position: "absolute",
+    top: "20px",
+    left: "80px",
+  },
+  sixthP: {
+    ...defaultTextStyle(),
+    position: "absolute",
+    bottom: "180px",
+    right: "-40px",
+    transform: "rotate(-40deg)",
+  },
+  purpleCircle: {
+    position: "absolute",
+    background: "#9d69f0",
+    top: "50%",
+    left: "50%",
+    transform: " translate(-50%, -50%)",
+    zIndex: -1,
+    borderRadius: "190px",
+    width: "385px",
+    height: "385px",
   },
   stores: {
     display: "flex",

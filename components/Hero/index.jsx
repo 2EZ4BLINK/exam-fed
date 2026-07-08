@@ -7,35 +7,49 @@ import googlePlayStore from "../../src/assets/images/google-play.png";
 
 const Hero = () => {
   return (
-    <Box sx={heroStyles.heroSection}>
+    <Box component="section" sx={heroStyles.heroSection}>
       <Box sx={heroStyles.leftSection}>
         <Typography sx={heroStyles.firstP}>
           Don’t make your dog lonely
         </Typography>
+
         <Box sx={heroStyles.secondPBox}>
-          <Typography sx={heroStyles.secondP}>
+          <Typography component="h1" sx={heroStyles.secondP}>
             Get your dog a partner in life
           </Typography>
         </Box>
+
         <Typography sx={heroStyles.thirdP}>
           Tindog assists dog owners whose pets are lonely. Tindog also
-          collaborated with veterinarians and a dog adoption project. Be a part
-          of this change
+          collaborates with veterinarians and a dog adoption project. Be a part
+          of this change.
         </Typography>
 
         <Typography sx={heroStyles.fourthP}>Download the app now</Typography>
+
         <Box sx={heroStyles.stores}>
-          <Box sx={heroStyles.storeLogoBox}>
-            <img src={googlePlayStore} alt="google play store" />
-          </Box>
-          <Box sx={heroStyles.storeLogoBox}>
-            <img src={appleStore} alt="apple store" />
-          </Box>
+          <a href="#" aria-label="Download Tindog on Google Play">
+            <Box sx={heroStyles.storeLogoBox}>
+              <img src={googlePlayStore} alt="Download Tindog on Google Play" />
+            </Box>
+          </a>
+
+          <a href="#" aria-label="Download Tindog on the App Store">
+            <Box sx={heroStyles.storeLogoBox}>
+              <img src={appleStore} alt="Download Tindog on the App Store" />
+            </Box>
+          </a>
         </Box>
       </Box>
 
-      <Box>
-        <img src={dogImage} alt="dog image" />
+      <Box sx={heroStyles.rightSection}>
+        <Typography sx={heroStyles.fifthP}>100+ breeders</Typography>
+
+        <img src={dogImage} alt="A happy dog representing the Tindog app" />
+
+        <Box aria-hidden="true" sx={heroStyles.purpleCircle} />
+
+        <Typography sx={heroStyles.sixthP}>1,000 dogs adopted</Typography>
       </Box>
     </Box>
   );
