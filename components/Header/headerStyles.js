@@ -1,8 +1,4 @@
 const headerStyles = {
-  img: {
-    width: "auto",
-    height: "100%",
-  },
   headerSection: {
     display: "flex",
     justifyContent: "space-between",
@@ -12,6 +8,10 @@ const headerStyles = {
     gap: 1,
     display: "flex",
     alignItems: "center",
+  },
+  img: {
+    width: "auto",
+    height: "100%",
   },
   pageTitle: {
     fontWeight: 600,
