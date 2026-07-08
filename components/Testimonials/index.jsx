@@ -55,7 +55,7 @@ const Testimonials = () => {
     <Box id="features" sx={testimonialStyles.section}>
       <Box sx={testimonialStyles.margins}>
         <Box component="header">
-          <Typography component="p" sx={testimonialStyles.firstP}>
+          <Typography sx={testimonialStyles.firstP}>
             Superb testimonials
           </Typography>
 

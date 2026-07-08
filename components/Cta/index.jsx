@@ -5,14 +5,16 @@ import ctaStyles from "./ctaStyles";
 
 const Cta = () => {
   return (
-    <Box sx={ctaStyles.ctaSection}>
+    <Box component="section" sx={ctaStyles.ctaSection}>
       <Box sx={ctaStyles.leftSection}>
         <Typography sx={ctaStyles.firstP}>
           Don’t make your dog lonely
         </Typography>
-        <Typography sx={ctaStyles.secondP}>
+
+        <Typography component="h2" sx={ctaStyles.secondP}>
           Get your dog a partner in life
         </Typography>
+
         <Button disableRipple sx={ctaStyles.getAppButton}>
           Get the App
         </Button>
@@ -22,14 +24,15 @@ const Cta = () => {
         <Box sx={ctaStyles.imageBox}>
           <img
             src={smilingDog}
-            alt="Smiling Dog Image"
+            alt="A smiling dog waiting to find a companion"
             style={ctaStyles.image}
           />
         </Box>
       </Box>
 
       <Typography sx={ctaStyles.thirdP}>Get me a partner, hooman!</Typography>
-      <Box sx={ctaStyles.purpleCircle} />
+
+      <Box aria-hidden="true" sx={ctaStyles.purpleCircle} />
     </Box>
   );
 };
