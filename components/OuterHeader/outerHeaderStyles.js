@@ -1,13 +1,13 @@
 const outerHeaderStyles = {
   containerPosition: {
-    width: "100%",
-    position: "fixed",
     top: 0,
     zIndex: 1,
+    width: "100%",
+    position: "fixed",
   },
   container: {
     px: 3,
-    pt: "36px",
+    pt: "20px",
     mx: "auto",
     maxWidth: "1200px",
   },
@@ -20,7 +20,7 @@ const outerHeaderStyles = {
     zIndex: 3,
     display: "flex",
     alignItems: "center",
-    padding: "10px 25px",
+    padding: "15px 25px",
     borderRadius: "9999px",
     backgroundColor: "#fff",
     justifyContent: "space-between",
@@ -59,6 +59,7 @@ const outerHeaderStyles = {
     borderRadius: "200px",
     background: "#FF6254",
     color: "#FFFFFF",
+    textTransform: "none",
   },
 };
 

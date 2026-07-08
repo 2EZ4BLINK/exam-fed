@@ -3,3 +3,5 @@ export { default as OuterHeader } from "./OuterHeader";
 export { default as Hero } from "./Hero";
 export { default as Brand } from "./Brand";
 export { default as Testimonials } from "./Testimonials";
+export { default as Cta } from "./Cta";
+export { default as Footer } from "./Footer";

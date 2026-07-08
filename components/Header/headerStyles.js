@@ -41,6 +41,7 @@ const headerStyles = {
     borderRadius: "200px",
     background: "#FFFFFF",
     color: "#FF6254",
+    textTransform: "none",
   },
 };
 
