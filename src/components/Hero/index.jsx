@@ -1,9 +1,9 @@
 import { Box, Typography } from "@mui/material";
 
 import heroStyles from "./heroStyle";
-import appleStore from "../../src/assets/images/apple-store.png";
-import dogImage from "../../src/assets/images/doggy.png";
-import googlePlayStore from "../../src/assets/images/google-play.png";
+import appleStore from "../../assets/images/apple-store.png";
+import dogImage from "../../assets/images/doggy.png";
+import googlePlayStore from "../../assets/images/google-play.png";
 
 const Hero = () => {
   return (

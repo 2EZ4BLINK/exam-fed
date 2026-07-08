@@ -1,7 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 
 import headerStyles from "./headerStyles";
-import logo from "../../src/assets/images/tindog-logo.png";
+import logo from "../../assets/images/tindog-logo.png";
 
 const Header = () => {
   return (

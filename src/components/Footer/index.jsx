@@ -1,12 +1,12 @@
 import { Box, Typography } from "@mui/material";
 
-import logo from "../../src/assets/images/tindog-logo.png";
-import email from "../../src/assets/images/email.png";
-import phone from "../../src/assets/images/phone.png";
-import twitter from "../../src/assets/images/twitter.png";
-import meta from "../../src/assets/images/meta.png";
-import googlePlayStore from "../../src/assets/images/google-play.png";
-import appleStore from "../../src/assets/images/apple-store.png";
+import logo from "../../assets/images/tindog-logo.png";
+import email from "../../assets/images/email.png";
+import phone from "../../assets/images/phone.png";
+import twitter from "../../assets/images/twitter.png";
+import meta from "../../assets/images/meta.png";
+import googlePlayStore from "../../assets/images/google-play.png";
+import appleStore from "../../assets/images/apple-store.png";
 import footerStyles from "./footerStyles";
 
 const contacts = [

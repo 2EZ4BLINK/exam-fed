@@ -14,12 +14,11 @@ const appStyles = {
     ...defaultSpacing,
   },
   customContainer: {
+    ...defaultSpacing,
     zIndex: 2,
     height: "849px",
     position: "relative",
     background: "linear-gradient(111.52deg, #F29D6A 10.78%, #FF6254 83.54%)",
-
-    ...defaultSpacing,
   },
   curve: {
     position: "relative",

@@ -1,5 +1,5 @@
-export { default as Header } from "./Header";
-export { default as OuterHeader } from "./OuterHeader";
+export { default as Header } from "./MainHeader";
+export { default as OuterHeader } from "./FixedHeader";
 export { default as Hero } from "./Hero";
 export { default as Brand } from "./Brand";
 export { default as Testimonials } from "./Testimonials";

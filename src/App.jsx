@@ -8,8 +8,8 @@ import {
   Hero,
   OuterHeader,
   Testimonials,
-} from "../components";
-import appStyles from "../styles/appStyles";
+} from "./components";
+import appStyles from "./styles/appStyles";
 
 function App() {
   return (
@@ -19,12 +19,14 @@ function App() {
           <Header />
           <Hero />
         </Box>
+
         <Brand />
         <Testimonials />
 
         <Box sx={appStyles.container}>
           <Cta />
         </Box>
+
         <Footer />
       </Box>
       <OuterHeader />

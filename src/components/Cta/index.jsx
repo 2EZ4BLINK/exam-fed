@@ -1,6 +1,6 @@
 import { Box, Typography, Button } from "@mui/material";
 
-import smilingDog from "../../src/assets/images/smiling-dog.png";
+import smilingDog from "../../assets/images/smiling-dog.png";
 import ctaStyles from "./ctaStyles";
 
 const Cta = () => {

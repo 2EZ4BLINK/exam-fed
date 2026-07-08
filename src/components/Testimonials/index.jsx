@@ -3,8 +3,8 @@ import { IoStarSharp } from "react-icons/io5";
 import { ImQuotesLeft } from "react-icons/im";
 
 import testimonialStyles from "./testimonialStyles";
-import petDog from "../../src/assets/images/pet-dog.png";
-import human from "../../src/assets/images/human.png";
+import petDog from "../../assets/images/pet-dog.png";
+import human from "../../assets/images/human.png";
 
 const testimonialData = [
   {

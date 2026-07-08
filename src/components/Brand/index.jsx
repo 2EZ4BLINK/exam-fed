@@ -2,10 +2,10 @@ import { Box, Typography, IconButton } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import brandStyles from "./brandStyles";
-import pawsImage from "../../src/assets/images/paws.png";
-import animalIndustry from "../../src/assets/images/animal-industry.png";
-import pawssionProject from "../../src/assets/images/website-logo.png";
-import animalhouse from "../../src/assets/images/animal-house.png";
+import pawsImage from "../../assets/images/paws.png";
+import animalIndustry from "../../assets/images/animal-industry.png";
+import pawssionProject from "../../assets/images/website-logo.png";
+import animalhouse from "../../assets/images/animal-house.png";
 
 const images = [
   {
