@@ -10,22 +10,22 @@ import animalhouse from "../../src/assets/images/animal-house.png";
 const images = [
   {
     id: 1,
-    alt: "Paws Image",
+    alt: "Philippine Animal Welfare Society (PAWS)",
     src: pawsImage,
   },
   {
     id: 2,
-    alt: "Animal Industry Image",
+    alt: "Bureau of Animal Industry",
     src: animalIndustry,
   },
   {
     id: 3,
-    alt: "Pawssion Project Image",
+    alt: "Pawssion Project",
     src: pawssionProject,
   },
   {
     id: 4,
-    alt: "Animal House Image",
+    alt: "Animal House",
     src: animalhouse,
   },
 ];
@@ -39,19 +39,34 @@ const Brand = () => {
 
   return (
     <Box component="section" sx={brandStyles.brandSection}>
-      <IconButton onClick={handleScrollInto} sx={brandStyles.findOutArrowBox}>
+      <IconButton
+        onClick={handleScrollInto}
+        sx={brandStyles.findOutArrowBox}
+        aria-label="Scroll to features section"
+      >
         <Typography sx={brandStyles.findOutText}>Find out more</Typography>
 
         <KeyboardArrowDownIcon sx={brandStyles.findOutArrow} />
       </IconButton>
 
-      <Box sx={brandStyles.brands}>
-        {(images || []).map((item) => {
-          const { id, alt, src } = item;
-          return (
-            <img key={id} src={src} alt={alt} style={brandStyles.brandImg} />
-          );
-        })}
+      <Box
+        component="ul"
+        sx={{
+          ...brandStyles.brands,
+          listStyle: "none",
+          margin: 0,
+          padding: 0,
+        }}
+      >
+        {images.map(({ id, alt, src }) => (
+          <Box
+            key={id}
+            component="li"
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
+            <img src={src} alt={alt} style={brandStyles.brandImg} />
+          </Box>
+        ))}
       </Box>
     </Box>
   );
